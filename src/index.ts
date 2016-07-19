@@ -1,6 +1,6 @@
-import fs = require('fs');
+import { readFile } from 'fs';
 
-fs.readFile('src/index.ts', function (err, data) {
+readFile('src/index.ts', function (err, data) {
    if (err) {
        return console.error(err);
    }
